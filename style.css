@@ -18,6 +18,7 @@ body {
   justify-content: center;
   align-items: end;
   height: 65vh;
+  transition: all 5s ease;
 }
 
 .container {
@@ -51,6 +52,7 @@ body {
 
 #quoteButton:hover {
   background-color: #0353aa;
+  transition: all 0.4s ease;
 }
 
 .num-of-click-container {
@@ -62,9 +64,9 @@ body {
   padding: 10px;
   border-radius: 15px;
   color: rgb(237, 214, 185);
+  text-shadow: #204c7b 2px 2px 2px;
 }
 
 .num-of-clicks {
   margin-left: 5px;
-
 }
