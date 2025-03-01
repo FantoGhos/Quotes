@@ -15,7 +15,7 @@ function initializeQuotes(data) {
         quoteButton.addEventListener('click', () => {
             const randomIndex = Math.floor(Math.random() * quotes.length);
             const selectedQuote = quotes[randomIndex];
-            quoteDisplay.innerText = `"${selectedQuote.quote}" - ${selectedQuote.author}`;
+            quoteDisplay.innerHTML = `"${selectedQuote.quote}" - <em>${selectedQuote.author}</em>`;
         });
     }
 }
