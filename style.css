@@ -1,10 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #b04343c7;
+  background-color: #c12b2bc7;
   margin: 0;
 }
 .footer {
@@ -17,6 +13,12 @@ body {
   text-align: center;
 }
 
+.container-parents {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 65vh;
+}
 
 .container {
   text-align: center;
@@ -49,4 +51,20 @@ body {
 
 #quoteButton:hover {
   background-color: #0353aa;
+}
+
+.num-of-click-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 1em;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  color: rgb(237, 214, 185);
+}
+
+.num-of-clicks {
+  margin-left: 5px;
+
 }
