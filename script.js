@@ -10,12 +10,14 @@ function initializeQuotes(data) {
     const quotes = data.quotes;
     const quoteButton = document.getElementById('quoteButton');
     const quoteDisplay = document.getElementById('quoteDisplay');
+    const authorDisplay = document.getElementById('authorDisplay');
 
-    if (quoteButton && quoteDisplay) {
+    if (quoteButton && quoteDisplay && authorDisplay) {
         quoteButton.addEventListener('click', () => {
             const randomIndex = Math.floor(Math.random() * quotes.length);
             const selectedQuote = quotes[randomIndex];
-            quoteDisplay.innerHTML = `"${selectedQuote.quote}" - <em>${selectedQuote.author}</em>`;
+            quoteDisplay.innerHTML = `"${selectedQuote.quote}"`;
+            authorDisplay.innerHTML = `<em>-${selectedQuote.author}</em>`;
             console.log(randomIndex);
         });
     }
